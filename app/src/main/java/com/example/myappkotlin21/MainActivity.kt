@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         // присваиваем значение объекту "кнопка" элемента верстки "кнопка" как кнопка
         buttonGoToAct2 = findViewById<View>(R.id.buttonGoToAct2) as Button
 
-        buttonGoToAct2!!.setOnClickListener(this) // установка прослушивания события клика на кнопке объекту данного класса
+        buttonGoToAct2?.setOnClickListener(this) // установка прослушивания события клика на кнопке объекту данного класса
     }
 
     override fun onClick(V: View) {
